@@ -1,12 +1,22 @@
-Study Tracker Ver.2 / GitHub Pages setup
+Study Tracker Ver.2.1 / GitHub Pages
 
-1. Extract this ZIP file.
-2. Upload index.html to the root of your GitHub repository.
-3. GitHub repository: Settings > Pages
-4. Source: Deploy from a branch
-5. Branch: main / (root)
-6. Open the published GitHub Pages URL in Safari.
-7. iPhone: Share > Add to Home Screen.
+更新内容
+1. 日報ヘッダー
+   学習記録がある日だけを数え、【Day 3｜2026/11/8】の形式で表示します。
+   同日に複数件の記録があっても1日として数えます。
 
-Data is stored in the browser LocalStorage.
-Clearing Safari website data can remove study records.
+2. 週報
+   日別の学習時間は表示しません。
+   週間合計、学習日数、教材別合計時間、学習内容、日々の気づきを表示します。
+
+3. AI用コピー
+   週報を選択すると「AI用にコピー」ボタンが表示されます。
+   教材別の学習内容とメモを、以下の3項目で要約するプロンプトをコピーします。
+   ・できるようになったこと
+   ・課題
+   ・来週意識すること
+
+GitHub更新方法
+既存Repositoryのindex.htmlを、ZIP内のindex.htmlで上書きしてCommit changesしてください。
+Settings > Pagesの設定変更は不要です。
+同じGitHub Pages URLを使う限り、既存の学習データは引き継がれます。
