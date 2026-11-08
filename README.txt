@@ -1,22 +1,13 @@
-Study Tracker Ver.2.1 / GitHub Pages
+My English Words Ver.2.2
 
-更新内容
-1. 日報ヘッダー
-   学習記録がある日だけを数え、【Day 3｜2026/11/8】の形式で表示します。
-   同日に複数件の記録があっても1日として数えます。
+修正点:
+- Ver.2.1で壊れていたCSV改行処理を全面修正
+- English / Japanese 列を正式対応
+- 7列CSV (English,Japanese,Example,ExampleMeaning,Category,Difficulty,Notes) 対応
+- 引用符付きカンマ、UTF-8 BOM、CRLF/LF改行対応
+- 読込失敗時に原因を画面表示
+- 同じCSVを再選択可能
+- V2の学習履歴を維持
+- Service Workerキャッシュをv22へ更新
 
-2. 週報
-   日別の学習時間は表示しません。
-   週間合計、学習日数、教材別合計時間、学習内容、日々の気づきを表示します。
-
-3. AI用コピー
-   週報を選択すると「AI用にコピー」ボタンが表示されます。
-   教材別の学習内容とメモを、以下の3項目で要約するプロンプトをコピーします。
-   ・できるようになったこと
-   ・課題
-   ・来週意識すること
-
-GitHub更新方法
-既存Repositoryのindex.htmlを、ZIP内のindex.htmlで上書きしてCommit changesしてください。
-Settings > Pagesの設定変更は不要です。
-同じGitHub Pages URLを使う限り、既存の学習データは引き継がれます。
+GitHubで index.html / manifest.webmanifest / sw.js を置き換えて Commit changes してください。
